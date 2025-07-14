@@ -1,0 +1,11 @@
+name: Github Action - Push Template Basico
+run-name: Running - ${{ github.event_name }}
+on: [push_request]
+
+jobs:
+    on-push:
+        runs-on: ubuntu-latest
+        steps:
+           - name: Comentario
+             run: |
+               echo " Comentario do Workflow PUSH_REQUEST - Basic"
